@@ -29,7 +29,7 @@ DOMAIN=faastore.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.faastore.my.id
 CF_ID=formlbbacc07@gmail.com
-CF_KEY=b91c702831d5992f2acee339d96a218a
+CF_KEY=86f23d68a43f2b5142f66d466eb891ee
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
