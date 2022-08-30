@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,13 +14,13 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 clear
@@ -32,7 +32,7 @@ echo ""
 echo -e "Username ${RED}${ssr_user}${NC} Already On VPS Please Choose Another"
 exit 1
 fi
-source /var/lib/fromhell26store/ipvps.conf
+source /var/lib/mailprabowo/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -82,7 +82,7 @@ echo -e "Obfs        : ${Red_font_prefix}${ssr_obfs}"
 echo -e "Max Device  : ${ssr_protocol_param}"
 echo -e "Created     : $hariini"
 echo -e "Expired     : ${exp} "
-echo -e "=========================="
+echo -e "━━━━━━━━━━━━━━━"
 echo -e "Link SSR    : ${ssr_link}"
-echo -e "=========================="
-echo -e "Script By fromhell26"
+echo -e "━━━━━━━━━━━━━━━"
+echo -e "Script By FAHMISTORE"
