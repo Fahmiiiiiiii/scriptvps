@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,21 +14,21 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 # Link Hosting Kalian
-fromhell26="raw.githubusercontent.com/fromhell26/scriptvps/main/backup"
+Fahmiiiiiiii="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/backup"
 
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://${fromhell26}/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://${Fahmiiiiiiii}/rclone.conf"
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
 make install
@@ -53,11 +53,11 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://${fromhell26}/autobackup.sh"
-wget -O backup "https://${fromhell26}/backup.sh"
-wget -O restore "https://${fromhell26}/restore.sh"
-wget -O strt "https://${fromhell26}/strt.sh"
-wget -O limitspeed "https://${fromhell26}/limitspeed.sh"
+wget -O autobackup "https://${Fahmiiiiiiii}/autobackup.sh"
+wget -O backup "https://${Fahmiiiiiiii}/backup.sh"
+wget -O restore "https://${Fahmiiiiiiii}/restore.sh"
+wget -O strt "https://${Fahmiiiiiiii}/strt.sh"
+wget -O limitspeed "https://${Fahmiiiiiiii}/limitspeed.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x restore
