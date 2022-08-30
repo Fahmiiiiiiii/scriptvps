@@ -1,7 +1,7 @@
 #!/bin/bash
 # V2Ray Mini Core Version 4.42.2
-# Script By fromhell26
-# @ Copyrigt 2021 By fromhell26
+# Script By FAHMISTORE
+# @ Copyrigt 2021 By FAHMISTORE
 # =====================================================
 
 # Color
@@ -536,8 +536,8 @@ END
 # / / Installation V2Ray Service
 cat > /etc/systemd/system/xray@.service << END
 [Unit]
-Description=Xray Service ( %i ) By fromhell26
-Documentation=https://t.me/fromhell26
+Description=Xray Service ( %i ) By FAHMISTORE
+Documentation=https://t.me/mailbintisukijem
 After=network.target nss-lookup.target
 
 [Service]
@@ -679,9 +679,9 @@ END
 # Installing Trojan Go Service
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
-Description=Trojan-Go Service By fromhell26
-Documentation=https://t.me/fromhell26
-Documentation=https://github.com/fromhell26/fromhell26
+Description=Trojan-Go Service By FAHMISTORE
+Documentation=https://t.me/mailbintisukijem
+Documentation=https://github.com/Fahmiiiiiiii
 After=network.target nss-lookup.target
 
 [Service]
