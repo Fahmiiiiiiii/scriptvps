@@ -1,6 +1,6 @@
 #!/bin/bash
-#shadowsocks-libev obfs install by fromhell26
-# My Telegram : https://t.me/fromhell26
+#shadowsocks-libev obfs install by FAHMISTORE
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -15,17 +15,17 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 # Link Hosting Kalian
-fromhell26="raw.githubusercontent.com/fromhell26/scriptvps/main/shadowsocks"
+Fahmiiiiiiii="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/shadowsocks"
 
 source /etc/os-release
 OS=$ID
@@ -115,10 +115,10 @@ iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2443:3543 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 ip6tables-save > /etc/ip6tables.up.rules
 cd /usr/bin
-wget -O addss "https://${fromhell26}/addss.sh"
-wget -O delss "https://${fromhell26}/delss.sh"
-wget -O cekss "https://${fromhell26}/cekss.sh"
-wget -O renewss "https://${fromhell26}/renewss.sh"
+wget -O addss "https://${Fahmiiiiiiii}/addss.sh"
+wget -O delss "https://${Fahmiiiiiiii}/delss.sh"
+wget -O cekss "https://${Fahmiiiiiiii}/cekss.sh"
+wget -O renewss "https://${Fahmiiiiiiii}/renewss.sh"
 chmod +x addss
 chmod +x delss
 chmod +x cekss
