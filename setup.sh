@@ -20,25 +20,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-fromhell26="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssh"
+Fahmiiiiiiii="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-fromhell26n="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/sstp"
+Fahmiiiiiiiin="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-fromhell26nn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssr"
+Fahmiiiiiiiinn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-fromhell26nnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/shadowsocks"
+Fahmiiiiiiiinnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-fromhell26nnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/wireguard"
+Fahmiiiiiiiinnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-fromhell26nnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/xray"
+Fahmiiiiiiiinnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-fromhell26nnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ipsec"
+Fahmiiiiiiiinnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-fromhell26nnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/backup"
+Fahmiiiiiiiinnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/backup"
 # Link Hosting Kalian Untuk Websocket
-fromhell26nnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/websocket"
+Fahmiiiiiiiinnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-fromhell26nnnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ohp"
+Fahmiiiiiiiinnnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
