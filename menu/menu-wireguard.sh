@@ -11,7 +11,7 @@ MYIP=$(wget -qO- ifconfig.co);
 echo "Checking VPS"
 clear
 echo -e ""
-toilet --gay -f slant -t " ENVY PROJECT"
+toilet --gay -f slant -t " FAHMI STORE"
 echo -e""
 echo -e "${color1}1${color3}.$bd Create Wireguard Account (${color2}addwg${color3})"
 echo -e "${color1}2${color3}.$bd Delete Wireguard Account (${color2}delwg${color3})"
@@ -39,7 +39,7 @@ x)
 menu-vpn
 ;;
 *)
-echo "Masukkan Nomor Yang Ada Sayang!"
+echo "SALAH NOMERNYA BROKU!"
 sleep 1
 menu-wireguard
 ;;
