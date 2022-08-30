@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,13 +14,13 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 clear
@@ -57,7 +57,7 @@ systemctl restart xray@vless-nontls
 service cron restart
 clear
 echo -e ""
-echo -e "======-XRAYS/VLESS-======"
+echo -e "======-VLESS-======"
 echo -e "Remarks     : ${user}"
 echo -e "IP/Host     : ${MYIP}"
 echo -e "Address     : ${domain}"
@@ -69,9 +69,9 @@ echo -e "Network     : ws"
 echo -e "Path        : /vless/"
 echo -e "Created     : $hariini"
 echo -e "Expired     : $exp"
-echo -e "========================="
+echo -e "━━━━━━━━━━━━━━━"
 echo -e "Link TLS    : ${xrayvless1}"
-echo -e "========================="
+echo -e "━━━━━━━━━━━━━━━"
 echo -e "Link No TLS : ${xrayvless2}"
-echo -e "========================="
-echo -e "Script By fromhell26"
+echo -e "━━━━━━━━━━━━━━━"
+echo -e "Script By FAHMISTORE"
