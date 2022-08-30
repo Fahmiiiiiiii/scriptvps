@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,18 +14,18 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 clear
 uuid=$(cat /etc/trojan-go/uuid.txt)
-source /var/lib/fromhell26store/ipvps.conf
+source /var/lib/mailprabowo/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -61,7 +61,7 @@ echo -e "Encryption : none"
 echo -e "Path       : /trojango"
 echo -e "Created    : $hariini"
 echo -e "Expired    : $exp"
-echo -e "========================="
+echo -e "━━━━━━━━━━━━━━━"
 echo -e "Link TrGo  : ${link}"
-echo -e "========================="
-echo -e "Script By fromhell26"
+echo -e "━━━━━━━━━━━━━━━"
+echo -e "Script By FAHMISTORE"
