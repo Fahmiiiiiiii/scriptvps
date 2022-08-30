@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,16 +14,16 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
-source /var/lib/fromhell26store/ipvps.conf
+source /var/lib/mailprabowo/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -51,8 +51,9 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e ""
+echo -e "━━━━━━━━━━━━━━━━━━"
 echo -e "Informasi SSH & OpenVPN"
-echo -e "=============================="
+echo -e "━━━━━━━━━━━━━━━━━━"
 echo -e "IP/Host       : $IP"
 echo -e "Domain        : ${domain}"
 echo -e "Username      : $Login"
@@ -76,13 +77,13 @@ echo -e "OVPN SSL      : http://$IP:89/ssl.ovpn"
 echo -e "BadVpn        : 7100-7200-7300"
 echo -e "Created       : $hariini"
 echo -e "Expired       : $expi"
-echo -e "=============================="
+echo -e "━━━━━━━━━━━━━━━━━━"
 echo -e "Payload Websocket TLS"
-echo -e "=============================="
+echo -e "━━━━━━━━━━━━━━━━━━"
 echo -e "GET wss://bug.com [protocol][crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
-echo -e "=============================="
+echo -e "━━━━━━━━━━━━━━━━━━"
 echo -e "Payload Websocket No TLS"
-echo -e "=============================="
+echo -e "━━━━━━━━━━━━━━━━━━"
 echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
-echo -e "=============================="
-echo -e "Script By fromhell26"
+echo -e "━━━━━━━━━━━━━━━━━━"
+echo -e "Script By FAHMISTORE"
