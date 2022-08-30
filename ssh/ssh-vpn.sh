@@ -202,7 +202,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://${fromhell26}/squid3.conf"
+wget -O /etc/squid/squid.conf "https://${Fahmiiiiiiii}/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # Install SSLH
@@ -324,7 +324,7 @@ wget -q -O /etc/init.d/stunnel5 "https://${Fahmiiiiiiiinnn}/stunnel5.init"
 # Ubah Izin Akses
 chmod 600 /etc/stunnel5/stunnel5.pem
 chmod +x /etc/init.d/stunnel5
-cp /usr/local/bin/stunnel /usr/local/Fahmiiiiiiii/stunnel5
+cp /usr/local/bin/stunnel /usr/local/fromhell26store/stunnel5
 
 # Remove File
 rm -r -f /usr/local/share/doc/stunnel/
@@ -349,7 +349,7 @@ wget https://${Fahmiiiiiiii}/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 echo; echo 'Installing DOS-Deflate 0.6'; echo
 echo; echo -n 'Downloading source files...'
 apt install -y dnsutils tcpdump dsniff grepcidr
-wget -qO ddos.zip "https://${fromhell26}/ddos-deflate.zip" > /dev/null 2>&1
+wget -qO ddos.zip "https://${Fahmiiiiiiii}/ddos-deflate.zip" > /dev/null 2>&1
 unzip ddos.zip
 cd ddos-deflate
 chmod +x install.sh
