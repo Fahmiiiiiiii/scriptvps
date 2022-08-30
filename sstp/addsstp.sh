@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,17 +14,17 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 clear
-source /var/lib/fromhell26store/ipvps.conf
+source /var/lib/mailprabowo/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -49,7 +49,7 @@ exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 cat >> /home/sstp/sstp_account <<EOF
 $user * $pass *
 EOF
-echo -e "### $user $exp">>"/var/lib/fromhell26store/data-user-sstp"
+echo -e "### $user $exp">>"/var/lib/mailprabowo/data-user-sstp"
 clear
 cat <<EOF
 
@@ -65,5 +65,5 @@ Cert      : http://$IP:89/server.crt
 Created   : $hariini
 Expired   : $exp
 ============================
-Script By fromhell26
+Script By FAHMISTORE
 EOF
