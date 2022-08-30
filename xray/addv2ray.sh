@@ -24,7 +24,7 @@ echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 clear
-source /var/lib/mailprabowo/ipvps.conf
+source /var/lib/fromhell26store/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
