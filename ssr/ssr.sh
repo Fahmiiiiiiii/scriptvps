@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,17 +14,17 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 # Link Hosting Kalian
-fromhell26="raw.githubusercontent.com/fromhell26/scriptvps/main/ssr"
+Fahmiiiiiiii="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssr"
 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
@@ -149,7 +149,7 @@ if [[ ${OS} == "centos" ]]; then
 }
 Start_SSR(){
 	check_pid
-	wget -O /etc/init.d/ssrmu "https://${fromhell26}/ssrmu"
+	wget -O /etc/init.d/ssrmu "https://${Fahmiiiiiiii}/ssrmu"
 	/etc/init.d/ssrmu start
 }
 Install_SSR(){
@@ -165,9 +165,9 @@ Save_iptables
 Start_SSR
 }
 Install_SSR
-wget -O /usr/bin/ssr https://${fromhell26}/ssrmu.sh && chmod +x /usr/bin/ssr
-wget -O /usr/bin/addssr https://${fromhell26}/addssr.sh && chmod +x /usr/bin/addssr
-wget -O /usr/bin/delssr https://${fromhell26}/delssr.sh && chmod +x /usr/bin/delssr
-wget -O /usr/bin/renewssr https://${fromhell26}/renewssr.sh && chmod +x /usr/bin/renewssr
+wget -O /usr/bin/ssr https://${Fahmiiiiiiii}/ssrmu.sh && chmod +x /usr/bin/ssr
+wget -O /usr/bin/addssr https://${Fahmiiiiiiii}/addssr.sh && chmod +x /usr/bin/addssr
+wget -O /usr/bin/delssr https://${Fahmiiiiiiii}/delssr.sh && chmod +x /usr/bin/delssr
+wget -O /usr/bin/renewssr https://${Fahmiiiiiiii}/renewssr.sh && chmod +x /usr/bin/renewssr
 touch /usr/local/shadowsocksr/akun.conf
 rm -f /root/ssr.sh
