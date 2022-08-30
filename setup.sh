@@ -7,7 +7,7 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
 		exit 1
 fi
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -20,36 +20,36 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-fromhell26="raw.githubusercontent.com/fromhell26/scriptvps/main/ssh"
+fromhell26="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-fromhell26n="raw.githubusercontent.com/fromhell26/scriptvps/main/sstp"
+fromhell26n="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-fromhell26nn="raw.githubusercontent.com/fromhell26/scriptvps/main/ssr"
+fromhell26nn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-fromhell26nnn="raw.githubusercontent.com/fromhell26/scriptvps/main/shadowsocks"
+fromhell26nnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-fromhell26nnnn="raw.githubusercontent.com/fromhell26/scriptvps/main/wireguard"
+fromhell26nnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-fromhell26nnnnn="raw.githubusercontent.com/fromhell26/scriptvps/main/xray"
+fromhell26nnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-fromhell26nnnnnn="raw.githubusercontent.com/fromhell26/scriptvps/main/ipsec"
+fromhell26nnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-fromhell26nnnnnnn="raw.githubusercontent.com/fromhell26/scriptvps/main/backup"
+fromhell26nnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/backup"
 # Link Hosting Kalian Untuk Websocket
-fromhell26nnnnnnnn="raw.githubusercontent.com/fromhell26/scriptvps/main/websocket"
+fromhell26nnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-fromhell26nnnnnnnnn="raw.githubusercontent.com/fromhell26/scriptvps/main/ohp"
+fromhell26nnnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 rm -f setup.sh
@@ -92,7 +92,7 @@ rm -f /root/ohp.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=https://t.me/fromhell26
+Documentation=https://t.me/mailbintisukijem
 
 [Service]
 Type=oneshot
@@ -111,7 +111,7 @@ echo "2.9" > /home/ver
 echo " "
 echo "Installation has been completed!!"
 echo " "
-echo "=================================-fromhell26 Project-===========================" | tee -a log-install.txt
+echo "=================================-FAHMI STORE-===========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -130,7 +130,7 @@ echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
 echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
 echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
 echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
-echo "   - XRAYS Vmess TLS         : 8443"  | tee -a log-install.txt
+echo "   - XRAYS Vmess TLS         : 443"  | tee -a log-install.txt
 echo "   - XRAYS Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - XRAYS Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - XRAYS Vless None TLS    : 2095"  | tee -a log-install.txt
@@ -158,13 +158,13 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : ENVY TEAM PROJECTS"  | tee -a log-install.txt
-echo "   - Recode                  : fromhell26" | tee -a log-install.txt
-echo "   - Telegram                : T.me/fromhell26"  | tee -a log-install.txt
+echo "   - Dev/Main                : FAHMI STORE"  | tee -a log-install.txt
+echo "   - Recode                  : FAHMI STORE" | tee -a log-install.txt
+echo "   - Telegram                : T.me/mailbintisukijem"  | tee -a log-install.txt
 echo "   - Instagram               : ~"  | tee -a log-install.txt
 echo "   - Whatsapp                : ~"  | tee -a log-install.txt
 echo "   - Facebook                : ~" | tee -a log-install.txt
-echo "----------------------Script Created By fromhell26 Project----------------------" | tee -a log-install.txt
+echo "----------------------Script Created By FAHMI STORE----------------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
