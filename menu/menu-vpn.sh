@@ -10,7 +10,7 @@ color3='\e[0m'
 MYIP=$(wget -qO- ifconfig.co);
 echo "Checking VPS"
 clear
-toilet --gay -f slant -t " ENVY PROJECT"
+toilet --gay -f slant -t " FAHMI STORE"
 echo -e""
 echo -e "${color1}1${color3}.$bd  Secure Socket Tunneling Protocol (${color2}menu-sstp${color3})"
 echo -e "${color1}2${color3}.$bd  Layer Two Tunneling Protocol (${color2}menu-l2tp${color3})"
@@ -38,7 +38,7 @@ x)
 menu
 ;;
 *)
-echo "Masukkan Nomor Yang Ada Sayang!"
+echo "SALAH NOMERNYA BROKU!"
 sleep 1
 menu-vpn
 ;;
