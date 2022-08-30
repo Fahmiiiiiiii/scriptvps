@@ -1,6 +1,6 @@
 #!/bin/bash
 # By fromhell26
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -15,30 +15,30 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 # ==================================================
 # Link Hosting Kalian
-fromhell26="raw.githubusercontent.com/fromhell26/scriptvps/main/ssh"
+Fahmiiiiiiii="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
-fromhell26n="raw.githubusercontent.com/fromhell26/scriptvps/main/xray"
+Fahmiiiiiiiin="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-fromhell26nn="raw.githubusercontent.com/fromhell26/scriptvps/main/trojango"
+Fahmiiiiiiiinn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-fromhell26nnn="raw.githubusercontent.com/fromhell26/scriptvps/main/stunnel5"
+Fahmiiiiiiiinnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/stunnel5"
 
 # Link Hosting Kalian Untuk menu
-fromhell26nnnn="raw.githubusercontent.com/fromhell26/scriptvps/main/menu"
+Fahmiiiiiiiinnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/menu"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
@@ -52,13 +52,13 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=fromhell26
-organizationalunit=fromhell26
-commonname=fromhell26
-email=fromhell26store@gmail.com
+organization=Fahmiiiiiiii
+organizationalunit=Fahmiiiiiiii
+commonname=Fahmiiiiiiii
+email=service@mailprabowo.my.id
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://${fromhell26}/password"
+wget -O /etc/pam.d/common-password "https://${Fahmiiiiiiii}/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -157,8 +157,8 @@ echo "neofetch" >> .profile
 apt -y install nginx php php-fpm php-cli php-mysql libxml-parser-perl
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-curl https://${fromhell26}/nginx.conf > /etc/nginx/nginx.conf
-curl https://${fromhell26}/vps.conf > /etc/nginx/conf.d/vps.conf
+curl https://${Fahmiiiiiiii}/nginx.conf > /etc/nginx/nginx.conf
+curl https://${Fahmiiiiiiii}/vps.conf > /etc/nginx/conf.d/vps.conf
 sed -i 's/listen = \/var\/run\/php-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php/fpm/pool.d/www.conf
 useradd -m vps;
 mkdir -p /home/vps/public_html
@@ -261,7 +261,7 @@ mkdir -p /etc/fromhell26
 
 # install stunnel 5 
 cd /root/
-wget -q -O stunnel5.zip "https://${fromhell26nnn}/stunnel5.zip"
+wget -q -O stunnel5.zip "https://${Fahmiiiiiiiinnn}/stunnel5.zip"
 unzip -o stunnel5.zip
 cd /root/stunnel
 chmod +x configure
@@ -307,7 +307,7 @@ cat > /etc/systemd/system/stunnel5.service << END
 [Unit]
 Description=Stunnel5 Service
 Documentation=https://stunnel.org
-Documentation=https://github.com/fromhell26
+Documentation=https://github.com/Fahmiiiiiiii
 After=syslog.target network-online.target
 
 [Service]
@@ -319,12 +319,12 @@ WantedBy=multi-user.target
 END
 
 # Service Stunnel5 /etc/init.d/stunnel5
-wget -q -O /etc/init.d/stunnel5 "https://${fromhell26nnn}/stunnel5.init"
+wget -q -O /etc/init.d/stunnel5 "https://${Fahmiiiiiiiinnn}/stunnel5.init"
 
 # Ubah Izin Akses
 chmod 600 /etc/stunnel5/stunnel5.pem
 chmod +x /etc/init.d/stunnel5
-cp /usr/local/bin/stunnel /usr/local/fromhell26/stunnel5
+cp /usr/local/bin/stunnel /usr/local/Fahmiiiiiiii/stunnel5
 
 # Remove File
 rm -r -f /usr/local/share/doc/stunnel/
@@ -344,7 +344,7 @@ systemctl restart stunnel5
 /etc/init.d/stunnel5 restart
 
 #OpenVPN
-wget https://${fromhell26}/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://${Fahmiiiiiiii}/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 echo; echo 'Installing DOS-Deflate 0.6'; echo
 echo; echo -n 'Downloading source files...'
@@ -390,10 +390,10 @@ echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # Install BBR
-wget https://${fromhell26}/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://${Fahmiiiiiiii}/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # Ganti Banner
-wget -O /etc/issue.net "https://${fromhell26}/issue.net"
+wget -O /etc/issue.net "https://${Fahmiiiiiiii}/issue.net"
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -414,67 +414,67 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O addhost "https://${fromhell26}/addhost.sh"
-wget -O about "https://${fromhell26}/about.sh"
-wget -O menu "https://${fromhell26}/menu.sh"
-wget -O addssh "https://${fromhell26}/addssh.sh"
-wget -O trialssh "https://${fromhell26}/trialssh.sh"
-wget -O delssh "https://${fromhell26}/delssh.sh"
-wget -O member "https://${fromhell26}/member.sh"
-wget -O delexp "https://${fromhell26}/delexp.sh"
-wget -O cekssh "https://${fromhell26}/cekssh.sh"
-wget -O restart "https://${fromhell26}/restart.sh"
-wget -O speedtest "https://${fromhell26}/speedtest_cli.py"
-wget -O info "https://${fromhell26}/info.sh"
-wget -O ram "https://${fromhell26}/ram.sh"
-wget -O renewssh "https://${fromhell26}/renewssh.sh"
-wget -O autokill "https://${fromhell26}/autokill.sh"
-wget -O ceklim "https://${fromhell26}/ceklim.sh"
-wget -O tendang "https://${fromhell26}/tendang.sh"
-wget -O clearlog "https://${fromhell26}/clearlog.sh"
-wget -O changeport "https://${fromhell26}/changeport.sh"
-wget -O portovpn "https://${fromhell26}/portovpn.sh"
-wget -O portwg "https://${fromhell26}/portwg.sh"
-wget -O porttrojan "https://${fromhell26}/porttrojan.sh"
-wget -O portsstp "https://${fromhell26}/portsstp.sh"
-wget -O portsquid "https://${fromhell26}/portsquid.sh"
-wget -O portv2ray "https://${fromhell26}/portv2ray.sh"
-wget -O portvless "https://${fromhell26}/portvless.sh"
+wget -O addhost "https://${Fahmiiiiiiii}/addhost.sh"
+wget -O about "https://${Fahmiiiiiiii}/about.sh"
+wget -O menu "https://${Fahmiiiiiiii}/menu.sh"
+wget -O addssh "https://${Fahmiiiiiiii}/addssh.sh"
+wget -O trialssh "https://${Fahmiiiiiiii}/trialssh.sh"
+wget -O delssh "https://${Fahmiiiiiiii}/delssh.sh"
+wget -O member "https://${Fahmiiiiiiii}/member.sh"
+wget -O delexp "https://${Fahmiiiiiiii}/delexp.sh"
+wget -O cekssh "https://${Fahmiiiiiiii}/cekssh.sh"
+wget -O restart "https://${Fahmiiiiiiii}/restart.sh"
+wget -O speedtest "https://${Fahmiiiiiiii}/speedtest_cli.py"
+wget -O info "https://${Fahmiiiiiiii}/info.sh"
+wget -O ram "https://${Fahmiiiiiiii}/ram.sh"
+wget -O renewssh "https://${Fahmiiiiiiii}/renewssh.sh"
+wget -O autokill "https://${Fahmiiiiiiii}/autokill.sh"
+wget -O ceklim "https://${Fahmiiiiiiii}/ceklim.sh"
+wget -O tendang "https://${Fahmiiiiiiii}/tendang.sh"
+wget -O clearlog "https://${Fahmiiiiiiii}/clearlog.sh"
+wget -O changeport "https://${Fahmiiiiiiii}/changeport.sh"
+wget -O portovpn "https://${Fahmiiiiiiii}/portovpn.sh"
+wget -O portwg "https://${Fahmiiiiiiii}/portwg.sh"
+wget -O porttrojan "https://${Fahmiiiiiiii}/porttrojan.sh"
+wget -O portsstp "https://${Fahmiiiiiiii}/portsstp.sh"
+wget -O portsquid "https://${Fahmiiiiiiii}/portsquid.sh"
+wget -O portv2ray "https://${Fahmiiiiiiii}/portv2ray.sh"
+wget -O portvless "https://${Fahmiiiiiiii}/portvless.sh"
 wget -O wbmn "https://${fromhell26}/webmin.sh"
-wget -O xp "https://${fromhell26}/xp.sh"
-wget -O running "https://${fromhell26}/running.sh"
-wget -O swapkvm "https://${fromhell26}/swapkvm.sh"
-wget -O addv2ray "https://${fromhell26n}/addv2ray.sh"
-wget -O addvless "https://${fromhell26n}/addvless.sh"
-wget -O addtrojan "https://${fromhell26n}/addtrojan.sh"
-wget -O delv2ray "https://${fromhell26n}/delv2ray.sh"
-wget -O delvless "https://${fromhell26n}/delvless.sh"
-wget -O deltrojan "https://${fromhell26n}/deltrojan.sh"
-wget -O cekv2ray "https://${fromhell26n}/cekv2ray.sh"
-wget -O cekvless "https://${fromhell26n}/cekvless.sh"
-wget -O cektrojan "https://${fromhell26n}/cektrojan.sh"
-wget -O renewv2ray "https://${fromhell26n}/renewv2ray.sh"
-wget -O renewvless "https://${fromhell26n}/renewvless.sh"
-wget -O renewtrojan "https://${fromhell26n}/renewtrojan.sh"
-wget -O certv2ray "https://${fromhell26n}/certv2ray.sh"
-wget -O addtrgo "https://${fromhell26nn}/addtrgo.sh"
-wget -O deltrgo "https://${fromhell26nn}/deltrgo.sh"
-wget -O renewtrgo "https://${fromhell26nn}/renewtrgo.sh"
-wget -O cektrgo "https://${fromhell26nn}/cektrgo.sh"
-wget -O menu-backup "https://${fromhell26nnnn}/menu-backup.sh"
-wget -O menu-domain "https://${fromhell26nnnn}/menu-domain.sh"
-wget -O menu-l2tp "https://${fromhell26nnnn}/menu-l2tp.sh"
-wget -O menu-pptp "https://${fromhell26nnnn}/menu-pptp.sh"
-wget -O menu-shadowsocks "https://${fromhell26nnnn}/menu-shadowsocks.sh"
-wget -O menu-ssh "https://${fromhell26nnnn}/menu-ssh.sh"
-wget -O menu-sstp "https://${fromhell26nnnn}/menu-sstp.sh"
-wget -O menu-tools "https://${fromhell26nnnn}/menu-tools.sh"
-wget -O menu-trial "https://${fromhell26nnnn}/menu-trial.sh"
-wget -O menu-trojan "https://${fromhell26nnnn}/menu-trojan.sh"
-wget -O menu-v2ray "https://${fromhell26nnnn}/menu-v2ray.sh"
-wget -O menu-vpn "https://${fromhell26nnnn}/menu-vpn.sh"
-wget -O menu-wireguard "https://${fromhell26nnnn}/menu-wireguard.sh"
-wget -O menu "https://${fromhell26nnnn}/menu.sh"
+wget -O xp "https://${Fahmiiiiiiii}/xp.sh"
+wget -O running "https://${Fahmiiiiiiii}/running.sh"
+wget -O swapkvm "https://${Fahmiiiiiiii}/swapkvm.sh"
+wget -O addv2ray "https://${Fahmiiiiiiiin}/addv2ray.sh"
+wget -O addvless "https://${Fahmiiiiiiiin}/addvless.sh"
+wget -O addtrojan "https://${Fahmiiiiiiiin}/addtrojan.sh"
+wget -O delv2ray "https://${Fahmiiiiiiiin}/delv2ray.sh"
+wget -O delvless "https://${Fahmiiiiiiiin}/delvless.sh"
+wget -O deltrojan "https://${Fahmiiiiiiiin}/deltrojan.sh"
+wget -O cekv2ray "https://${Fahmiiiiiiiin}/cekv2ray.sh"
+wget -O cekvless "https://${Fahmiiiiiiiin}/cekvless.sh"
+wget -O cektrojan "https://${Fahmiiiiiiiin}/cektrojan.sh"
+wget -O renewv2ray "https://${Fahmiiiiiiiin}/renewv2ray.sh"
+wget -O renewvless "https://${Fahmiiiiiiiin}/renewvless.sh"
+wget -O renewtrojan "https://${Fahmiiiiiiiin}/renewtrojan.sh"
+wget -O certv2ray "https://${Fahmiiiiiiiin}/certv2ray.sh"
+wget -O addtrgo "https://${Fahmiiiiiiiin}/addtrgo.sh"
+wget -O deltrgo "https://${Fahmiiiiiiiinn}/deltrgo.sh"
+wget -O renewtrgo "https://${Fahmiiiiiiiinn}/renewtrgo.sh"
+wget -O cektrgo "https://${Fahmiiiiiiiinn}/cektrgo.sh"
+wget -O menu-backup "https://${Fahmiiiiiiiinnn}/menu-backup.sh"
+wget -O menu-domain "https://${Fahmiiiiiiiinnnn}/menu-domain.sh"
+wget -O menu-l2tp "https://${Fahmiiiiiiiinnnn}/menu-l2tp.sh"
+wget -O menu-pptp "https://${Fahmiiiiiiiinnnn}/menu-pptp.sh"
+wget -O menu-shadowsocks "https://${Fahmiiiiiiiinnnn}/menu-shadowsocks.sh"
+wget -O menu-ssh "https://${Fahmiiiiiiiinnnn}/menu-ssh.sh"
+wget -O menu-sstp "https://${Fahmiiiiiiiinnnn}/menu-sstp.sh"
+wget -O menu-tools "https://${Fahmiiiiiiiinnnn}/menu-tools.sh"
+wget -O menu-trial "https://${Fahmiiiiiiiinnnn}/menu-trial.sh"
+wget -O menu-trojan "https://${Fahmiiiiiiiinnnn}/menu-trojan.sh"
+wget -O menu-v2ray "https://${Fahmiiiiiiiinnnn}/menu-v2ray.sh"
+wget -O menu-vpn "https://${Fahmiiiiiiiinnnn}/menu-vpn.sh"
+wget -O menu-wireguard "https://${Fahmiiiiiiiinnnn}/menu-wireguard.sh"
+wget -O menu "https://${Fahmiiiiiiiinnnn}/menu.sh"
 chmod +x addhost
 chmod +x menu
 chmod +x addssh
