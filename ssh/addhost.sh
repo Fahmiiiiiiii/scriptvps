@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/fromhell26
+# My Telegram : https://t.me/mailbintisukijem
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -13,18 +13,18 @@ LIGHT='\033[0;37m'
 # ==========================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/fromhell26/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Fahmiiiiiiii/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${LIGHT}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/fromhell26"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mailbintisukijem"
 exit 0
 fi
 clear
 read -rp "Domain/Host : " -e domain
-echo "IP=$domain" >>/var/lib/fromhell26store/ipvps.conf
+echo "IP=$domain" >>/var/lib/mailprabowo/ipvps.conf
 echo $domain > /etc/xray/domain
 echo start
 systemctl stop xray@v2ray-tls
