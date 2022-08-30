@@ -20,25 +20,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-Fahmiiiiiiii="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssh"
+fromhell26="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-Fahmiiiiiiiin="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/sstp"
+fromhell26n="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-Fahmiiiiiiiinn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssr"
+fromhell26nn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-Fahmiiiiiiiinnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/shadowsocks"
+fromhell26nnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-Fahmiiiiiiiinnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/wireguard"
+fromhell26nnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-Fahmiiiiiiiinnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/xray"
+fromhell26nnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-Fahmiiiiiiiinnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ipsec"
+fromhell26nnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-Fahmiiiiiiiinnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/backup"
+fromhell26nnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/backup"
 # Link Hosting Kalian Untuk Websocket
-Fahmiiiiiiiinnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/websocket"
+fromhell26nnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-Fahmiiiiiiiinnnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ohp"
+fromhell26nnnnnnnnn="raw.githubusercontent.com/Fahmiiiiiiii/scriptvps/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -130,7 +130,7 @@ echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
 echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
 echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
 echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
-echo "   - XRAYS Vmess TLS         : 443"  | tee -a log-install.txt
+echo "   - XRAYS Vmess TLS         : 8443"  | tee -a log-install.txt
 echo "   - XRAYS Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - XRAYS Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - XRAYS Vless None TLS    : 2095"  | tee -a log-install.txt
