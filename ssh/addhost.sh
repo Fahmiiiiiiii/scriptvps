@@ -24,7 +24,7 @@ exit 0
 fi
 clear
 read -rp "Domain/Host : " -e domain
-echo "IP=$domain" >>/var/lib/mailprabowo/ipvps.conf
+echo "IP=$domain" >>/var/lib/fromhell26store/ipvps.conf
 echo $domain > /etc/xray/domain
 echo start
 systemctl stop xray@v2ray-tls
