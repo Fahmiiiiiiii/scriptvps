@@ -17,7 +17,7 @@ echo "Checking VPS"
 clear 
 echo -e ""
 echo -e ""
-toilet --gay -f slant -t " ENVY PROJECT"
+toilet --gay -f slant -t " FAHMI STORE"
 #cat /usr/bin/bannerku | lolcat
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 IPVPS=$(curl -s ipinfo.io/ip )
@@ -102,7 +102,7 @@ x)
 exit
 ;;
 *)
-echo "ENVY PROJECTS"
+echo "FAHMI STORE"
 menu
 ;;
 esac
