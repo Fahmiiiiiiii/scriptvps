@@ -10,7 +10,7 @@ color3='\e[0m'
 MYIP=$(wget -qO- ifconfig.co);
 echo "Checking VPS"
 clear
-toilet --gay -f slant -t " ENVY PROJECT"
+toilet --gay -f slant -t " FAHMI STORE"
 echo -e""
 echo -e "${color1}1${color3}.$bd Create Trojan Account (${color2}addtrojan${color3})"
 echo -e "${color1}2${color3}.$bd Deleting Trojan Account (${color2}deltrojan${color3})"
@@ -54,7 +54,7 @@ x)
 menu
 ;;
 *)
-echo "Masukkan Nomor Yang Ada Sayang!"
+echo "SALAH NOMERNYA BROKU!"
 sleep 1
 menu-trojan
 ;;
