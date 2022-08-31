@@ -25,11 +25,11 @@ exit 0
 fi
 clear
 apt install jq curl -y
-DOMAIN=faastore.my.id
+DOMAIN=envy-vpn.tech
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.faastore.my.id
-CF_ID=formlbbacc07@gmail.com
-CF_KEY=86f23d68a43f2b5142f66d466eb891ee
+SUB_DOMAIN=${sub}.envy-vpn.tech
+CF_ID=kidroster55@gmail.com
+CF_KEY=1fa7ccec0343954e2242e221e38a439d20277
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
