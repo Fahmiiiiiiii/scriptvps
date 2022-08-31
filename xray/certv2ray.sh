@@ -26,7 +26,7 @@ fi
 clear
 echo start
 sleep 0.5
-source /var/lib/mailprabowo/ipvps.conf
+source /var/lib/fromhell26store/ipvps.conf
 domain=$IP
 systemctl enable xray@v2ray-tls
 systemctl enable xray@v2ray-nontls
